@@ -12,7 +12,7 @@ const Auth = () => {
     <section class ='auth-section'>
         {isSignup &&<AboutAuth/>}
         <div class ='auth-container-2'>
-        {!isSignup && <img src={icon}alt='stack overflow' className='login-logo'> </img>}
+        {!isSignup && <img src={icon}alt='stack overflow' className='login-logo'/>}
      <form >
       {
         isSignup &&(
@@ -28,11 +28,11 @@ const Auth = () => {
             </label>
             <label htmlFor="password">
                 <div style ={{display:"flex",justifyContent:"space-between"}}>
-                <h4>Display name</h4>
+                <h4>Password</h4>
                 {! isSignup && <p style={{color:"#007ac6",fontSize:"13px"}}> forgot password</p>}
                 </div>
                 <input type="password" id='password'name ='password' />
-                isSignup && <p style={{color:"#666767",fontSize:"13px"}}>Passwords must contain at least eight<br/> charachters,including at least 1 letter and 1<br/>number</p>
+                <p style={{color:"#666767",fontSize:"13px"}}>Passwords must contain at least eight<br/> charachters,including at least 1 letter and 1<br/>number</p>
             </label>
             {
                 isSignup &&(
